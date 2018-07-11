@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vue Tutorial</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+        <h1> {{ greet ('Night') }}</h1>
+        <h1>{{name}}</h1>
+        <p>Location: {{location}}</p>
+        <a v-bind:href="website">Wikipedia</a>
+        <p v-html="websiteTag"></p>
+        <input type="text" v-bind:value="name"/>
+    </div>
+</body>
+<script src="tutoVue.js"></script>
+
+</html>
